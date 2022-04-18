@@ -1,0 +1,186 @@
+/* Global settings */
+*  {
+    box-sizing: border-box;
+    width: 1100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #06113C;
+}
+
+/* Header/footer/navbar */
+.activePage,
+.activePage:link,
+.activePage:visited,
+.activePage span {
+    color: #FF8C32;
+    font-size: larger;
+}
+
+header, footer {
+    background-color: #DDDDDD;
+}
+
+nav {
+    background-color: #CCCCCC;
+    height: 50px;
+}
+
+#header-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 12.5%;
+    width: 12.5%;
+}
+
+#company-name {
+    text-align: center;
+    color: #06113C;
+}
+
+#navbar-list {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    
+}
+
+#navbar-list a {
+    text-decoration: none;
+}
+
+#navbar-list a span {
+    display: block;
+    text-align: center;
+    height: auto;
+    width: 366.66px;
+}
+
+#navbar-list span:hover {
+    background-color: hsla(26, 100%, 60%, 0.178);
+}
+
+header,
+footer,
+header a:visited, 
+header a:link,
+footer a:visited, 
+footer a:link,
+nav {
+    width: auto;
+    color: #06113C;
+    border-radius: 0.25em;
+}
+
+.footer-layout {
+    padding-left: 5px;
+}
+
+.footerTitle {
+    text-decoration: underline;
+    font-size: large;
+    margin: 0px;
+}
+
+/* Body and content */
+body {
+    background-color: #EEEEEE;
+}
+
+/* Main content */
+#main-content-product {
+    display: inline-flex;
+}
+
+#main-content {
+    margin: 5px;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.content-section h2 {
+    text-decoration: underline;
+    font-size: large;
+    margin: 0px;
+}
+
+/* form */
+#product-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    
+    border: 1px solid black;
+    max-width: 75%;
+    min-width: 50%;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    
+}
+
+.formStyle {
+    width: auto;
+}
+
+label.form-field-labels {
+    width: auto;
+}
+
+.suppStatusLabel {
+    display: inline;
+}
+
+.inputStyle, .suppStatus {
+    display: inline;
+    width: 100%;
+}
+
+input[type="checkbox"]:focus {
+    margin: 0;
+    border: 0;
+}
+
+.inputStyleBtn, input.inputStyle {
+    width: auto;
+}
+
+.inputStyle:focus, .inputStyleBtn:focus {
+    outline: 3px solid #FF8C32;
+    border-radius: 0.25em;
+}
+
+.formStyleChklst {
+    width: auto;
+}
+
+.formStyleChklst input {
+    width: 4%;
+}
+
+/* Error box */
+#errorBox {
+    min-width: 10%;
+    max-width: 25%;
+    margin: 10px auto 10px auto;
+    margin-right: 10px;
+}
+
+div.error-item {
+    width: auto;
+    border: 4px solid rgba(255, 68, 0, 0.589);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: lightsalmon;
+}
+
+.error-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgba(255, 68, 0, 0.616);
+}
+
+label.errored-input-name, ul.errors, ul.errors * {
+    width: auto;
+    word-wrap: break-word;
+    list-style: square
+}

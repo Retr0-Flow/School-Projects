@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Harsimran Grewal</title>
+        <link href="./normalize.css" rel="stylesheet">
+        <script src="./product.js"></script>
+    </head>
+    <body>
+        <header class="headr">
+            <img id="header-logo" src="https://raw.githubusercontent.com/Retr0-Flow/resources/main/grid_512.png" alt="Daemos Company Logo">
+            <h1 id="company-name">Daemos</h1>
+            <nav id="navbar">
+                <div id="navbar-list">
+                    <a href="./honesty.html"><span>Honesty</span></a>
+                    <a href="./product.html"><span>Product</span></a>
+                    <a href="./reflection.html"><span>Reflection</span></a>
+                </div>
+            </nav>
+        </header>
+        
+        <main id="main-content-product">
+            <aside id="errorBox" hidden></aside>
+            <form id="product-form" name="signup" action="https://httpbin.org/post" method="post" enctype="multipart/form-data" onsubmit="return formValidation()">
+                <!-- Product ID -->
+                <div class="formStyle">
+                    <label class="form-field-labels" for="productID">Product ID&colon;</label>
+                    <input class="inputStyle" id="productID" name="id" type="number" min="10000000" max="99999999" step="1" placeholder="44455599" autofocus required tabindex="1">
+                </div>
+                
+                <!-- Product Description -->
+                <div class="formStyle">
+                    <label class="form-field-labels" for="productDesc">Product Description&colon;</label>
+                    <textarea class="inputStyle" id="productDesc" name="description" minlength="20" placeholder="Product description..." spellcheck="true" required tabindex="2"></textarea>
+                </div>
+                
+                <!-- Product Price -->
+                <div class="formStyle">
+                    <label class="form-field-labels" for="productPrice">Product Price&colon;</label>
+                    <input class="inputStyle" id="productPrice" name="price" type="number" min="1" max="999" step=1 placeholder="42" required tabindex="3">
+                </div>
+
+                <!-- Supplier Username -->
+                <div class="formStyle">
+                    <label class="form-field-labels" for="suppUsrName">Supplier Username&colon;</label>
+                    <input class="inputStyle" id="suppUsrName" name="username" type="text" minlength="6" placeholder="jSmith" autocomplete="username" required tabindex="4">
+                </div>
+
+                <!-- Supplier Status -->
+                <div class="formStyle">
+                    <label class="form-field-labels">Supplier Status&colon;</label>
+                </div>
+                <div class="formStyleChklst">
+                    <input class="suppStatus" id="newSupp" name="status" type="checkbox" value="New Supplier" tabindex="5">
+                    <label class="form-field-labels suppStatusLabel" for="newSupp">New Supplier</label>
+                    <br>
+                    <input class="suppStatus" id="contSigned" name="status" type="checkbox" value="Contract Signed" tabindex="6">
+                    <label class="form-field-labels suppStatusLabel" for="contSigned">Contract Signed</label>
+                    <br>
+                    <input class="suppStatus" id="qualTested" name="status" type="checkbox" value="Quality Tested" tabindex="7">
+                    <label class="form-field-labels suppStatusLabel" for="qualTested">Quality Tested</label>
+                </div>
+                
+                <!-- Supplier Email -->
+                <div class="formStyle">
+                    <label class="form-field-labels" for="suppEmail">Supplier Email&colon;</label>
+                    <input class="inputStyle" id="suppEmail" name="email" type="email" placeholder="jSmith@email.com" autocomplete="email" required tabindex="8">
+                </div>
+                
+                <!-- Hidden fields -->
+                <input type="hidden" name="lastName" id="lastName" value="Grewal" />
+	            <input type="hidden" name="studentId" id="studentId" value="015203151" />
+
+                <!-- Submit and Reset form -->
+                <div class="formStyle">
+                    <input class="inputStyleBtn" id="submitBtn" type="submit" value="Submit" tabindex="9">
+                    <input class="inputStyleBtn" id="resetBtn" type="reset" value="Reset" onclick="clrForm()" tabindex="10">
+                </div>
+
+                
+            </form>
+        </main>
+
+        <footer>
+            <section class="footer-layout">
+                <h2 class="footerTitle">Links</h2>
+                <br>
+                <span>GitHub Link&colon; </span>
+                <a id="git-link" href="https://github.com/Retr0-Flow/School-Projects/tree/main/WEB222/Final-Assessment" title="GitHub Link">Github Link</a>
+            </section>
+            <br>
+            <section class="footer-layout">
+                <h2 class="footerTitle">Resource Attributions</h2>
+                <br>
+                <span>Logo&colon; </span>
+                <a id="logo" href="https://www.flaticon.com/free-icons/shapes-and-symbols" title="shapes-and-symbols icons">Shapes-and-symbols icons created by Freepik - Flaticon</a>
+            </section>
+        </footer>
+    </body>
+</html>
